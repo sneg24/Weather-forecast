@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>European Travel Agency - 7-Day Weather Forecast</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>7-Day Weather Forecast for Major European Cities</h1>
+    <div id="city-selection">
+      <label for="city">Select a city:</label>
+      <select id="city" onchange="getWeather()">
+        <option value="London">London</option>
+        <option value="Paris">Paris</option>
+        <option value="Rome">Rome</option>
+        <option value="Berlin">Berlin</option>
+        <option value="Madrid">Madrid</option>
+        <option value="Amsterdam">Amsterdam</option>
+        <option value="Vienna">Vienna</option>
+        <option value="Prague">Prague</option>
+        <option value="Dublin">Dublin</option>
+        <option value="Lisbon">Lisbon</option>
+      </select>
+    </div>
+    <div id="weather-forecast"></div>
+    <div id="map"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
